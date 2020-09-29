@@ -1,24 +1,15 @@
 /*
-
-Integrantes: Henrique Canterle Fava, Kelvin Pereira Alves, Renato dos Santos Machado Júnior, Wesley Arthur Batista
+Integrantes:
+- Henrique Canterle Fava
+- Kelvin Pereira Alves
+- Renato dos Santos Machado Júnior
+- Wesley Arthur Batista
 
 3. Utilizando o programa braco.c como referência, implemente um programa braco-garra.c. Este
 programa deverá acrescente ao braço robótico uma garra com três dedos, sendo um indicador, um médio e um
 polegar, como mostra a figura a seguir. O usuário deverá poder rotacionar o dedo indicador com as teclas i e I,
 nos sentidos horário e anti-horário. Da mesma forma, as teclas p P deverão rotacionar o polegar, e teclas m M,
 o dedo médio do robô.
-
------ CONTROLES -----
-
-- Movimento -
- Ombro: s, S
- Cotovelo: e, E
- Indicador: i, I
- Polegar: p, P
- Medio: m, M
-
-Sair: ESC
-
 */
 
 #include <windows.h>

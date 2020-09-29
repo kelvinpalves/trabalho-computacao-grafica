@@ -1,3 +1,17 @@
+/*
+Integrantes:
+- Henrique Canterle Fava
+- Kelvin Pereira Alves
+- Renato dos Santos Machado Júnior
+- Wesley Arthur Batista
+
+1. Utilizando o programa linha.c como referência, implemente um programa quadrado.c. Este programa
+deverá desenhar numa janela com fundo branco, de dimensões 256x256 pixels, um quadrado vermelho, com
+vértice superior esquerdo de coordenadas (x, y) = (30, 226) e vértice inferior direito de coordenadas (x, y) =
+(226, 30). Quando a tecla a (keycode=97) for pressionada, o quadrado deverá ficar com a cor azul. Quando a
+tecla v (keycode=118) for pressionada, o quadrado deverá voltar à cor vermelha.
+*/
+
 #include <GL/glut.h>
 #include <stdlib.h>
 
