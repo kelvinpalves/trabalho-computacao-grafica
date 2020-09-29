@@ -2,42 +2,22 @@
 #include <stdlib.h>
 
 #define AZUL 1
-#define VERMELHO 2
-#define BTN_ESC 27
 #define BTN_A 97
+#define BTN_ESC 27
 #define BTN_V 118
-#define TAMANHO 256
 #define P1 30
 #define P2 226
+#define TAMANHO 256
+#define VERMELHO 2
 
 int cor = VERMELHO;
 
-void inicializar(void);
-void exibir(void);
+void definirCorDePreenchimento();
 void eventosTeclado(unsigned char tecla, int x, int y);
+void exibir(void);
+void inicializar(void);
 
-int main(int argc, char **argv)
-{
-    glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(TAMANHO, TAMANHO);
-    glutInitWindowPosition(100, 100);
-    glutCreateWindow("Quadrado");
-    inicializar();
-    glutDisplayFunc(exibir);
-    glutKeyboardFunc(eventosTeclado);
-    glutMainLoop();
-    return 0;
-}
-
-void inicializar(void)
-{
-    glClearColor(1.0, 1.0, 1.0, 1.0);
-    glOrtho(0, 256, 0, 256, -1, 1);
-    cor = VERMELHO;
-}
-
-void setColor()
+void definirCorDePreenchimento()
 {
     switch (cor)
     {
@@ -51,23 +31,6 @@ void setColor()
         glColor3f(1, 0, 0);
         break;
     }
-}
-
-void exibir(void)
-{
-    int i;
-    glClear(GL_COLOR_BUFFER_BIT);
-    glDisable(GL_POLYGON_STIPPLE);
-    glPolygonMode(GL_BACK, GL_FILL);
-    setColor();
-    glBegin(GL_POLYGON);
-    glVertex2i(P1, P2);
-    glVertex2i(P2, P2);
-    glVertex2i(P2, P1);
-    glVertex2i(P1, P1);
-    glEnd();
-    glFlush();
-    glutSwapBuffers();
 }
 
 void eventosTeclado(unsigned char tecla, int x, int y)
@@ -86,4 +49,42 @@ void eventosTeclado(unsigned char tecla, int x, int y)
         glutPostRedisplay();
         break;
     }
+}
+
+void exibir(void)
+{
+    int i;
+    glClear(GL_COLOR_BUFFER_BIT);
+    glDisable(GL_POLYGON_STIPPLE);
+    glPolygonMode(GL_BACK, GL_FILL);
+    definirCorDePreenchimento();
+    glBegin(GL_POLYGON);
+    glVertex2i(P1, P2);
+    glVertex2i(P2, P2);
+    glVertex2i(P2, P1);
+    glVertex2i(P1, P1);
+    glEnd();
+    glFlush();
+    glutSwapBuffers();
+}
+
+void inicializar(void)
+{
+    glClearColor(1.0, 1.0, 1.0, 1.0);
+    glOrtho(0, 256, 0, 256, -1, 1);
+    cor = VERMELHO;
+}
+
+int main(int argc, char **argv)
+{
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+    glutInitWindowSize(TAMANHO, TAMANHO);
+    glutInitWindowPosition(100, 100);
+    glutCreateWindow("Quadrado");
+    inicializar();
+    glutDisplayFunc(exibir);
+    glutKeyboardFunc(eventosTeclado);
+    glutMainLoop();
+    return 0;
 }
