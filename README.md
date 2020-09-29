@@ -21,3 +21,14 @@
 
 **Executar:**
 > ./build/selecao
+
+## Questão 3
+
+**Arquivo:**
+> braco-garra.c
+
+**Compilar:**
+> gcc braco-garra.c -o build/selecao -lglut -lGLU -lGL
+
+**Executar:**
+> ./build/selecao

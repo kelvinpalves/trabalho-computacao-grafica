@@ -1,3 +1,20 @@
+/*
+Integrantes:
+- Henrique Canterle Fava
+- Kelvin Pereira Alves
+- Renato dos Santos Machado Júnior
+- Wesley Arthur Batista
+
+2. Utilizando o programa preenchimento.c como referência, implemente um programa selecao.c. Este
+programa deverá desenhar numa janela com fundo branco, de dimensões 256x256 pixels, quatro polígonos
+com as mesmas coordenadas dos polígonos do programa de referência. Todos os polígonos devem estar
+inicialmente preenchidos de amarelo e com bordas pretas. Quando o usuário clicar com o botão esquerdo do
+mouse dentro de um dos polígonos, a cor de preenchimento deste polígono deverá mudar para uma cor
+aleatória. Quando a tecla b (keycode=98) for pressionada, o programa passará a mudar as cores das bordas e
+não mais dos fundos dos polígonos. Quando a tecla f (keycode=102) for pressionada, o programa passará a
+mudar as cores dos fundos dos polígonos e não mais das bordas.
+*/
+
 #include <GL/glut.h>
 #include <stdlib.h>
 
