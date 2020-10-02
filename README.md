@@ -28,10 +28,10 @@
 > braco-garra.c
 
 **Compilar:**
-> gcc braco-garra.c -o build/selecao -lglut -lGLU -lGL
+> gcc braco-garra.c -o build/braco-garra -lglut -lGLU -lGL
 
 **Executar:**
-> ./build/selecao
+> ./build/braco-garra
 
 ## Questão 4
 
@@ -39,7 +39,7 @@
 > tiposdeprojecoes.c
 
 **Compilar:**
-> tiposdeprojecoes.c -o build/selecao -lglut -lGLU -lGL
+> gcc tiposdeprojecoes.c -o build/tipodeprojecoes -lglut -lGLU -lGL
 
 **Executar:**
-> ./build/selecao
+> ./build/tipodeprojecoes

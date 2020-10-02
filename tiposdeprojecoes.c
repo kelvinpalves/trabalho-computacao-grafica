@@ -2,18 +2,18 @@
 Integrantes:
 - Henrique Canterle Fava
 - Kelvin Pereira Alves
-- Renato dos Santos Machado Júnior
+- Renato dos Santos Machado Jï¿½nior
 - Wesley Arthur Batista
 
-4. Utilizando o programa projecoes.c como referência, implemente um programa tiposdeprojecoes.c.
-Este programa deverá conter mais sete opções de teclado: t e f, para exibir o topo e o fundo do objeto, F e T,
+4. Utilizando o programa projecoes.c como referï¿½ncia, implemente um programa tiposdeprojecoes.c.
+Este programa deverï¿½ conter mais sete opï¿½ï¿½es de teclado: t e f, para exibir o topo e o fundo do objeto, F e T,
 para mostrar a frente e a face traseira, e e d, para mostrar a faces esquerda e direita, respectivamente, e a tecla c,
-para mostrar o triângulo do canto.
+para mostrar o triï¿½ngulo do canto.
 */
 
-#include <stdio.h>
-#include <windows.h>
+
 #include <GL/glut.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 void init(void);
