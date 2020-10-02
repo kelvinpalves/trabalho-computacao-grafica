@@ -32,3 +32,14 @@
 
 **Executar:**
 > ./build/selecao
+
+## Questão 4
+
+**Arquivo:**
+> tiposdeprojecoes.c
+
+**Compilar:**
+> tiposdeprojecoes.c -o build/selecao -lglut -lGLU -lGL
+
+**Executar:**
+> ./build/selecao
